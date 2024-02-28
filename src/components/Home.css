@@ -1,0 +1,49 @@
+.fimage{
+    width: 33.3%;
+}
+.simage{
+    width: 33.3%;
+}
+.timage{
+    width: 33.3%;
+}
+.box{
+    height: 50vh;
+}
+.new{
+    width: 500px;
+}
+@keyframes moveLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes moveRight {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  .animate-move-left {
+    animation: moveLeft 5s linear forwards;
+  }
+  
+  .animate-move-right {
+    animation: moveRight 0.5s linear forwards;
+  }
+  @keyframes slideAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

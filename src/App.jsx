@@ -1,14 +1,19 @@
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import BuyGiftCards from "./components/buyGiftCard";
+import Home from "./components/Home";
 
 function App() {
-
   return (
     <>
-      <h1
-        className="text-3xl text-center text-red-700"
-      >Welcome to Vite with TailwindCSS and Reactjs</h1>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/buygiftcards" element={<BuyGiftCards />} />
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
