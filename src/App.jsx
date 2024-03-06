@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BuyGiftCards from "./components/buyGiftCard";
 import Home from "./components/Home";
+import About from "./components/About";
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/buygiftcards" element={<BuyGiftCards />} />
+          <Route path="/" element={<BuyGiftCards />} />
+          <Route path="/about" element={<About />} />
+
         </Routes>
       </Router>
     </>

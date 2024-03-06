@@ -13,37 +13,89 @@
 .new{
     width: 500px;
 }
-@keyframes moveLeft {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
+.image-containerr {
+  overflow: hidden;
+  width: 50%;
+}
+.thewhite{
+  width: 50%;
+
+}
+.image {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.image:hover {
+  transform: scale(1.1); /* Change the scale value to adjust the zoom level */
+}
+.firstslider{
+  width: 100%;
+  height: auto;
+}
+.secslider{
+  width: 100%;
+  height: auto;
+}
+.thirdslider{
+  width: 100%;
+  height: auto;
+}
+.forthslider{
+  width: 100%;
+  height: auto;
+}
+.cate{
+  background: #FAFEFF;
+}
+.relative {
+  position: relative;
+}
+
+.rectanglar {
+  width: 100%; /* Adjust width as needed */
+  /* Add other styles for the rectangular image */
+}
+.reviews {
+  width: 100%; /* Adjust width as needed */
+  /* Add other styles for the rectangular image */
+}
+.image-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 40px; /* Adjust the gap between images */
+  top: 100px;
+}
+.span-container{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  top: 50px;
+}
+.span-container span{
+  width: 9.7vw;
+  height: 130px;
+  background-color: black;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-container img {
   
-  @keyframes moveRight {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
-  }
-  
-  .animate-move-left {
-    animation: moveLeft 5s linear forwards;
-  }
-  
-  .animate-move-right {
-    animation: moveRight 0.5s linear forwards;
-  }
-  @keyframes slideAnimation {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  
+  width: 20vw; /* Adjust the width of each image */
+  /* Subtracting the gap from width ensures there are 3 images per row */
+  /* Adjust the width as per your requirement */
+  /* Adjust other properties like height, object-fit, etc., according to your needs */
+}
+.pink{
+  background: #FFE6CF;
+  border-radius: 15px;
+}
+.pinkimg{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
