@@ -31,7 +31,6 @@ import ed from "../assets/ed.png"
 import di from "../assets/di.png"
 import ch from "../assets/ch.png"
 import Framebig from "../assets/Framebig.png"
-import FrameCopy from "../assets/FrameCopy.png"
 import Rectanglar from "../assets/Rectanglar.png"
 import firstslider from "../assets/firstslider.png"
 import secslider from "../assets/secslider.png"
@@ -52,18 +51,10 @@ import Frame105 from "../assets/Frame105.png"
 import Frame106 from "../assets/Frame106.png"
 import Frame107 from "../assets/Frame107.png"
 import Frame11 from "../assets/Frame11.png"
-import UsedLogo from "../assets/UsedLogo.png"
-import talk1 from "../assets/talk1.png"
-import appstore from "../assets/appstore.png"
-import googleplay from "../assets/googleplay.png"
-import talk2 from "../assets/talk2.png"
-import Socialfb from "../assets/Socialfb.png"
-import Socialig from "../assets/Socialig.png"
-import Socialin from "../assets/Socialin.png"
-import Socialtwitter from "../assets/Socialtwitter.png"
 import Frame50 from "../assets/Frame50.png"
 import "./Home.css"
 import Head from "./Nav";
+import Footer from "./footer";
 
 
 function Home() {
@@ -499,58 +490,7 @@ function Home() {
         </div>
         <button className="text-white font-bold rounded-lg flex justify-center w-1/4 items-center px-2 py-2 bg-blue-500 hover:bg-blue-700">See more blog post</button>
       </div>
-      <div className="bg-indigo-900 flex flex-col justify-center items-center pt-16 pb-4 px-10 ">
-        <img className="mb-2" src={talk1} alt="Logo" />
-        <img className="" src={talk2} alt="Logo" />
-        <div className="flex gap-10 mt-10">
-          <img className="cursor-pointer" src={googleplay} alt="Logo" />
-          <img className="cursor-pointer" src={appstore} alt="Logo" />
-        </div>
-
-        <div className="flex justify-around w-full mt-16">
-          <div className="w-1/6">
-            <img className="h-16 w-auto" src={UsedLogo} alt="Logo" />
-            <div className="flex ml-2 gap-4">
-              <img className="" src={Socialfb} alt="Logo" />
-              <img className="" src={Socialig} alt="Logo" />
-              <img className="" src={Socialin} alt="Logo" />
-              <img className="" src={Socialtwitter} alt="Logo" />
-            </div>
-          </div>
-
-          <div className="w-1/6 text-white">
-            <h3 className="text-gray-400 font-semibold mb-6">COMPANY</h3>
-            <h5>About Us</h5>
-            <h5>FAQ</h5>
-            <h5>Blog Post</h5>
-            <h5>Review</h5>
-            <h5>Career</h5>
-
-          </div>
-          <div className="w-1/6 text-white">
-            <h3 className="text-gray-400 font-semibold mb-6">LEGAL</h3>
-            <h5>Terms and Conditions</h5>
-            <h5>Privacy Policy</h5>
-          </div>
-          <div className="w-1/6 text-white">
-            <h3 className="text-gray-400 font-semibold mb-6">SUPPORT</h3>
-            <h5>Help</h5>
-            <h5>FAQs</h5>
-            <h5>Return Policy</h5>
-            <h5>Contact Us</h5>
-          </div>
-          <div className="w-1/6 text-white">
-            <h3 className="text-gray-400 font-semibold mb-6">DEALS</h3>
-            <h5>Give Always</h5>
-            <h5>Discounts</h5>
-            <h5>Refer and Earn</h5>
-            <h5>Affiliate Programs</h5>
-          </div>
-        </div>
-
-        <img className="mt-10" src={FrameCopy} alt="Logo" />
-
-      </div>
+     <Footer />
     </nav>
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutHead from './aboutNav'
+import Head from './Nav'
 import Frameabout from "../assets/Frameabout.png"
 import Framehero from "../assets/Framehero.png"
 
@@ -7,7 +7,7 @@ import Framehero from "../assets/Framehero.png"
 function About() {
   return (
     <div>
-      <AboutHead />
+      <Head />
       <div className='px-4 py-4'>
         <img src={Frameabout} alt="" />
 
