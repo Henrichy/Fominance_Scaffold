@@ -99,3 +99,42 @@
   border-top-right-radius: 15px;
 
 }
+.caro{
+
+}
+.round-div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotateAntiClockwise 5s linear infinite;
+  position: absolute;
+  bottom: 0;
+}
+.content{
+ color: white;
+}
+
+circular-text {
+  color: #fff;
+}
+.ico{
+  transition: filter 0.3s;
+}
+.ico:hover{
+  color:rgb(0, 247, 255);
+  fill: rgb(0, 247, 255);;
+}
+
+
+@keyframes rotateAntiClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+

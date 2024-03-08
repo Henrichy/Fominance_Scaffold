@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import '@webpunk/circular-text';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Headroom from "react-headroom";
@@ -105,6 +106,7 @@ function Home() {
   const carouselRef = useRef(null);
 
   useEffect(() => {
+ 
 
     const interval = setInterval(() => {
       carouselRef.current.next();
@@ -127,16 +129,16 @@ function Home() {
             <img className="h-8 w-auto" src={forminance} alt="Logo" />
           </div>
           <div className="h-8 w-auto flex items-center cursor-pointer" >
-            <img className="h-8 w-auto flex items-center" src={location} alt="Logo" />
-            <h4 className="text-sm">Nigeria</h4>
+            <img className="ico h-8 w-auto flex items-center" src={location} alt="Logo" />
+            <h4 className="ico text-sm">Nigeria</h4>
           </div>
-          <div className="h-8 w-auto flex items-center cursor-pointer" >
+          <div className="ico h-8 w-auto flex items-center cursor-pointer" >
             <img className="h-8 w-auto flex items-center" src={cart} alt="Logo" />
-            <h4 className="text-sm">My Cart</h4>
+            <h4 className=" text-sm">My Cart</h4>
           </div>
-          <div className=" flex items-center cursor-pointer" >
+          <div className="ico flex items-center cursor-pointer" >
             <img className="h-8 w-auto flex items-center" src={person} alt="Logo" />
-            <h4 className="text-sm">My Account</h4>
+            <h4 className=" text-sm">My Account</h4>
           </div>
           <div className="relative flex items-center rounded-md border border-blue-600 w-55  flex items-center pl-4  gap-2">
             <img className="h-4 w-auto absolute left-2 top-2.2" src={icon} alt="Logo" />
@@ -149,7 +151,7 @@ function Home() {
       </Headroom>
 
       {/* Next Section */}
-      <div className="relative">
+      <div className="relative caro">
         <Carousel
           ref={carouselRef}
           responsive={secresponsive}
@@ -170,6 +172,14 @@ function Home() {
             <img className="forthslider" src={forthslider} alt="Logo" />
           </div>
         </Carousel>
+        <div className="round-div bg-blue-500">
+      {/* You can add content inside the round div */}
+     <circular-text
+    text="Hub for all things giftcard "
+    radius="90"
+    textColor="#fff">
+</circular-text>
+    </div>
       </div>
 
       <div className="mt-12 mx-10">
@@ -377,55 +387,90 @@ function Home() {
         <div className="px-10 pt-12">
           <img className="" src={BestDeals} alt="Logo" />
           <img className="my-8" src={discov} alt="Logo" />
-          <div className="flex justify-around items-center gap-4 mt-6 overflow-x-hidden">
-
-            <div className="new pink pb-4">
-              <img className="pinkimg" src={Netflix} alt="Logo" />
-              <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">Netflix</h4> <h3>$200</h3></div>
-              <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-              <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-                <img className="" src={heart_fill} alt="Logo" />
-                <small className="">1544 likes</small>
-
-
-              </h4>
-                <h3>
-                  <img className="" src={heart_unfill} alt="Logo" />
-                </h3>
-              </div>
-            </div>
-
-            <div className="new pink pb-4">
-              <img className="pinkimg" src={image4} alt="Logo" />
-              <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-              <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-              <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-                <img className="" src={heart_fill} alt="Logo" />
-                <small className="">1544 likes</small>
+          <Carousel
+          ref={carouselRef}
+          responsive={responsive}
+          autoPlay
+          autoPlaySpeed={3000}
+          infinite
+          className="flex gap-4 justify"
+        >
+          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={ubuntu} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
 
 
-              </h4>
-                <h3>
-                  <img className="" src={heart_unfill} alt="Logo" />
-                </h3>
-              </div>
-            </div>
-            <div className="new pink pb-4">
-              <img className="pinkimg" src={image5} alt="Logo" />
-              <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">Escape from Tarkov</h4> <h3>$400</h3></div>
-              <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-              <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-                <img className="" src={heart_fill} alt="Logo" />
-                <small className="">1544 likes</small>
-
-
-              </h4>
-                <h3>
-                  <img className="" src={heart_unfill} alt="Logo" />
-                </h3>
-              </div>
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
             </div>
           </div>
+          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={Linux} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>
+          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={zeenox} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>
+          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={image4} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>
+          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>
+        </Carousel>
           <h3 className="font-semibold text-2xl mt-6 pb-6">
             <button className="text-white font-bold rounded-lg flex justify-center w-1/4 items-center px-2 py-2 bg-blue-500 hover:bg-blue-700">See All</button>
 
@@ -490,6 +535,7 @@ function Home() {
         </div>
         <button className="text-white font-bold rounded-lg flex justify-center w-1/4 items-center px-2 py-2 bg-blue-500 hover:bg-blue-700">See more blog post</button>
       </div>
+      
      <Footer />
     </nav>
 

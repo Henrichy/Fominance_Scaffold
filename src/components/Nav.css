@@ -1,3 +1,7 @@
 .active{
     border-bottom: 2px solid #FA9218;
 }
+.text-white:hover{
+    border-bottom: 2px solid #FA9218;
+    padding-bottom: 2px;
+}
