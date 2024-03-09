@@ -109,9 +109,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotateAntiClockwise 5s linear infinite;
+  animation: rotateAntiClockwise 8s linear infinite;
   position: absolute;
   bottom: 0;
+  right: 0px;
+}
+.push{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .content{
  color: white;
@@ -124,8 +130,10 @@ circular-text {
   transition: filter 0.3s;
 }
 .ico:hover{
-  color:rgb(0, 247, 255);
-  fill: rgb(0, 247, 255);;
+  color:rgb(11, 78, 159);
+}
+.catego:hover{
+transform: scale(1.1);
 }
 
 

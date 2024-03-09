@@ -41,7 +41,7 @@ import Netflix from "../assets/Netflix.png"
 import Linux from "../assets/8.png"
 import zeenox from "../assets/9.png"
 import image4 from "../assets/image4.png"
-import image5 from "../assets/image5.png"
+import Starr from "../assets/Star3.svg"
 import Frameblog from "../assets/Frameblog.png"
 import seeall from "../assets/seeall.png"
 import Frame101 from "../assets/Frame101.png"
@@ -53,6 +53,10 @@ import Frame106 from "../assets/Frame106.png"
 import Frame107 from "../assets/Frame107.png"
 import Frame11 from "../assets/Frame11.png"
 import Frame50 from "../assets/Frame50.png"
+import GroupBlue from "../assets/GroupBlue.png"
+import GroupBluee from "../assets/GroupBluee.png"
+import GroupBlueee from "../assets/GroupBlueee.png"
+
 import "./Home.css"
 import Head from "./Nav";
 import Footer from "./footer";
@@ -128,16 +132,16 @@ function Home() {
             <img src={LOGO} alt="Logo" />
             <img className="h-8 w-auto" src={forminance} alt="Logo" />
           </div>
-          <div className="h-8 w-auto flex items-center cursor-pointer" >
-            <img className="ico h-8 w-auto flex items-center" src={location} alt="Logo" />
-            <h4 className="ico text-sm">Nigeria</h4>
+          <div className="ico h-8 w-auto flex items-center cursor-pointer" >
+          <img className="h-8 w-auto flex items-center" src={location} alt="Logo" />
+            <h4 className="text-sm">Nigeria</h4>
           </div>
           <div className="ico h-8 w-auto flex items-center cursor-pointer" >
-            <img className="h-8 w-auto flex items-center" src={cart} alt="Logo" />
+          <img className="h-8 w-auto flex items-center" src={cart} alt="Logo" />
             <h4 className=" text-sm">My Cart</h4>
           </div>
           <div className="ico flex items-center cursor-pointer" >
-            <img className="h-8 w-auto flex items-center" src={person} alt="Logo" />
+            <img className="acc w-auto flex items-center" src={person} alt="Logo" />
             <h4 className=" text-sm">My Account</h4>
           </div>
           <div className="relative flex items-center rounded-md border border-blue-600 w-55  flex items-center pl-4  gap-2">
@@ -172,13 +176,16 @@ function Home() {
             <img className="forthslider" src={forthslider} alt="Logo" />
           </div>
         </Carousel>
+        <div className="push flex justify-between items-center">
+          <div className=""></div>
         <div className="round-div bg-blue-500">
       {/* You can add content inside the round div */}
      <circular-text
-    text="Hub for all things giftcard "
+    text="Hub for all things giftcard. "
     radius="90"
     textColor="#fff">
 </circular-text>
+    </div>
     </div>
       </div>
 
@@ -282,18 +289,18 @@ function Home() {
         <div className="relative">
           <img className="rectanglar" src={Rectanglar} alt="Logo" />
           <div className="px-10 absolute image-container">
-            <img className="" src={tr} alt="Logo" />
-            <img className="" src={technology} alt="Logo" />
-            <img className="" src={su} alt="Logo" />
-            <img className="" src={re} alt="Logo" />
-            <img className="" src={ga} alt="Logo" />
-            <img className="" src={en} alt="Logo" />
-            <img className="" src={ed} alt="Logo" />
-            <img className="" src={di} alt="Logo" />
-            <img className="" src={ch} alt="Logo" />
-            <img className="" src={tr} alt="Logo" />
-            <img className="" src={ed} alt="Logo" />
-            <img className="" src={di} alt="Logo" />
+            <img className="catego" src={tr} alt="Logo" />
+            <img className="catego" src={technology} alt="Logo" />
+            <img className="catego" src={su} alt="Logo" />
+            <img className="catego" src={re} alt="Logo" />
+            <img className="catego" src={ga} alt="Logo" />
+            <img className="catego" src={en} alt="Logo" />
+            <img className="catego" src={ed} alt="Logo" />
+            <img className="catego" src={di} alt="Logo" />
+            <img className="catego" src={ch} alt="Logo" />
+            <img className="catego" src={tr} alt="Logo" />
+            <img className="catego" src={ed} alt="Logo" />
+            <img className="catego" src={di} alt="Logo" />
 
           </div>
         </div>
