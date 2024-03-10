@@ -99,9 +99,9 @@
   border-top-right-radius: 15px;
 
 }
-.caro{
 
-}
+
+
 .round-div {
   width: 200px;
   height: 200px;
@@ -137,4 +137,13 @@ circular-text {
     transform: rotate(-360deg);
   }
 }
+.allrights{
+  height: 50px;
+  width: auto;
+  margin-top: 30px;
+  font-weight: 500;
+  color: #D0D5DD;
+  line-height: 24px;
+  font-size: 20px;
 
+}

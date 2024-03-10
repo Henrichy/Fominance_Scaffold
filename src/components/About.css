@@ -1,0 +1,59 @@
+.stat-img{
+    width: 100%;
+    
+}
+.txt-holder{
+    padding: 20px;
+    height: 458px;
+    padding: 177px;
+    width: auto;
+
+}
+.Paragraph-txt{
+    color: #8A8A8A;
+    line-height: 32.69px;
+    font-size: 24px;
+    font-weight: 400;
+    
+
+}
+.Big-txt{
+    font-size: 50px;
+    color: #233694;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 40px;
+
+
+}
+.grid-container{
+    margin-top: 5em;
+    padding-left: 177px;
+    align-items: center;
+    
+}
+.ourVisionimg{
+width: 612px;
+height: 323px;
+}
+.Ov-header, .Om-header{
+font-weight:500;
+font-size: 48px;
+line-height: 60px;
+color: #233694;
+}
+.ov-paragraph, .om-paragraph {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32.69px;
+    color: #8A8A8A;    
+}
+.ovdiv, .omdiv{
+    padding-right:200px;
+    height: 504px;
+    padding-top: 150px;
+}
+.hero-grid{
+    color: #fff5ec;
+height: 100px;
+}
