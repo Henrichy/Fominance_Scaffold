@@ -1,0 +1,23 @@
+.Stats{
+    background-color: #233694;
+    height: 194px;
+    display: flex;
+    gap: 15rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+.statheader{
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 50px;
+   color: #FEBF00;
+   
+}
+.statp{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38.14px;
+    color: white;
+
+}
