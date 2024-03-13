@@ -9,7 +9,7 @@ function Head() {
     <NavLink to="/" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
       BUY GIFTCARDS
     </NavLink>
-    <NavLink to="/mostpopular" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
+    <NavLink to="/mostpopularcards" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
       MOST POPULAR CARDS
     </NavLink>
     <NavLink to="/bestdeals" activeClassName="active" className="nav text-white flex justify-center items-center h-full">

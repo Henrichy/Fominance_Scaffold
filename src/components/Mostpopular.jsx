@@ -1,133 +1,64 @@
-import React, { useState, useEffect, useRef } from "react";
-import '@webpunk/circular-text';
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import Headroom from "react-headroom";
-import forminance from "../assets/fominance.png"
-import LOGO from "../assets/LOGO.png"
-import ubuntu from "../assets/ubuntu.png"
+import React, { useState } from 'react'
+import Head from './Nav'
+import Headroom from 'react-headroom'
 import icon from "../assets/icon.png"
-import tr from "../assets/tr.png"
-import technology from "../assets/technology.png"
+import LOGO from "../assets/LOGO.png"
+import nigeria from "../assets/nigeria.png"
+import ghana from "../assets/ghana.png"
+import togo from "../assets/togo.png"
+import forminance from "../assets/fominance.png"
+import Netflix from "../assets/Netflix.png"
+import Hermes from "../assets/hermes.png"
+import Youtube from "../assets/youtube.png"
+import Hm from "../assets/h.m.png"
+import Edx from "../assets/edx.png"
+import Skill from "../assets/skill.png"
+import Linked from "../assets/linkedin.png"
+import Apple from "../assets/apple.png"
+import Olive from "../assets/olive.png"
+import Chilis from "../assets/chilis.png"
+import Uu from "../assets/uu.png"
+import Shirt from "../assets/shirt.png"
+
 import heart_fill from "../assets/heart_fill.png"
 import heart_unfill from "../assets/heart_unfill.png"
-import BestDeals from "../assets/BestDeals.png"
-import discov from "../assets/discov.png"
-import discover from "../assets/discover.png"
-import categories from "../assets/categories.png"
-import su from "../assets/su.png"
-import re from "../assets/re.png"
-import ga from "../assets/ga.png"
-import en from "../assets/en.png"
-import ed from "../assets/ed.png"
-import di from "../assets/di.png"
-import ch from "../assets/ch.png"
-import Framebig from "../assets/Framebig.png"
-import Rectanglar from "../assets/Rectanglar.png"
-import firstslider from "../assets/firstslider.png"
-import secslider from "../assets/secslider.png"
-import thirdslider from "../assets/thirdslider.png"
-import forthslider from "../assets/forthslider.png"
-import Netflix from "../assets/Netflix.png"
-import Linux from "../assets/8.png"
-import zeenox from "../assets/9.png"
-import image4 from "../assets/image4.png"
 
 
-import "./Home.css"
-import Head from "./Nav";
-import Footer from "./footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-regular-svg-icons";
-import { faCartShopping, faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import Reviewcomp from "./Reviewcomp";
-import Supportcomp from "./Supportcomp";
-import Robluxcomp from "./Robluxcomp";
+import { faUser } from '@fortawesome/free-regular-svg-icons'
+import { faCartShopping, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import './Home.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Supportcomp from './Supportcomp'
+import Robluxcomp from './Robluxcomp'
+import Footer from './footer'
 
-
-function Home() {
+function Mostpopular() {
   const [showContainer, setShowContainer] = useState(false);
-  const [showCarousel, setShowCarousel] = useState(true);
+  const [showMore, setShowMore] = useState(true);
   const [showContainertwo, setShowContainertwo] = useState(false);
-  const [showCarouseltwo, setShowCarouseltwo] = useState(true);
+  const [showMoretwo, setShowMoretwo] = useState(true);
   const [showContainerthree, setShowContainerthree] = useState(false);
-  const [showCarouselthree, setShowCarouselthree] = useState(true);
-
+  const [showMorethree, setShowMorethree] = useState(true);
 
   const toggleContainer = () => {
     setShowContainer(!showContainer);
-    setShowCarousel(!showCarousel);
+    setShowMore(!showMore);
 
   }
   const toggleContainertwo = () => {
     setShowContainertwo(!showContainertwo);
-    setShowCarouseltwo(!showCarouseltwo);
+    setShowMoretwo(!showMoretwo);
 
   }
   const toggleContainerthree = () => {
     setShowContainerthree(!showContainerthree);
-    setShowCarouselthree(!showCarouselthree);
+    setShowMorethree(!showMorethree);
 
   }
 
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
-  const secresponsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 1
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 1
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
-
-  const carouselRef = useRef(null);
-
-  useEffect(() => {
- 
-
-    const interval = setInterval(() => {
-      carouselRef.current.next();
-    }, 3000);
-
-
-    // Clean up on component unmount
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
   return (
     <nav>
-      <Headroom>
+     <Headroom>
         <Head />
         <div className="flex bg-white justify-around items-center pt-10 pb-10">
           <div className="flex h-10 w-auto items-center">
@@ -155,136 +86,62 @@ function Home() {
           </div>
         </div>
       </Headroom>
-
-      {/* Next Section */}
-      <div className="relative caro">
-        <Carousel
-          ref={carouselRef}
-          responsive={secresponsive}
-          autoPlay
-          autoPlaySpeed={3000}
-          infinite
-        >
-          <div>
-            <img className="firstslider" src={firstslider} alt="Logo" />
-          </div>
-          <div>
-            <img className="secslider" src={secslider} alt="Logo" />
-          </div>
-          <div>
-            <img className="thirdslider" src={thirdslider} alt="Logo" />
-          </div>
-          <div>
-            <img className="forthslider" src={forthslider} alt="Logo" />
-          </div>
-        </Carousel>
-        <div className="push flex justify-between items-center">
-          <div className=""></div>
-        <div className="round-div bg-blue-500">
-      {/* You can add content inside the round div */}
-     <circular-text
-    text="Hub for all things giftcard. "
-    radius="90"
-    textColor="#fff">
-</circular-text>
-    </div>
-    </div>
-      </div>
       
-      <div className="mt-12 mx-10">
-        <img src={discover} alt="" />
-        {showCarousel && (
-        <Carousel
-          ref={carouselRef}
-          responsive={responsive}
-          autoPlay
-          autoPlaySpeed={3000}
-          infinite
-          className="flex gap-4 justify"
-        >
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={ubuntu} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Linux} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={zeenox} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={image4} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-        </Carousel>
-        )}
+      <div className='px-10 mb-6'>
+        <img src={nigeria} alt="" />
       </div>
-      
+      {showMore && (
+      <div className='contain px-10'>
+      <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={Hermes} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>          
+          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={Youtube} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={Hm} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>         
+          </div>
+      )}
       {showContainer && (
       <div className="px-10 seeall-container">
       <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Hermes} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -299,7 +156,7 @@ function Home() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Youtube} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -313,7 +170,7 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Hm} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -328,7 +185,7 @@ function Home() {
             </div>
           </div>         
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Edx} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -343,7 +200,7 @@ function Home() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Skill} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -358,7 +215,7 @@ function Home() {
             </div>
           </div>    
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Linked} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -372,7 +229,7 @@ function Home() {
               </h3>
             </div>
           </div>          
-          <div className="pink w-96 pb-4">
+          {/*<div className="pink w-96 pb-4">
             <img className="pinkimg" src={Netflix} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
@@ -459,129 +316,27 @@ function Home() {
                 <img className="" src={heart_unfill} alt="Logo" />
               </h3>
             </div>
-          </div>
+      </div>*/}
           </div>
            )
           };
-      <div className="py-8 mx-10">
+      <div className="py-8 mx-10 flex justify-center items-center">
         <h3 className="font-semibold text-2xl">
           <button
           onClick={toggleContainer}
-          className="text-white font-bold rounded-lg flex justify-center w-1/4 items-center px-2 py-2 bg-blue-500 hover:bg-blue-700">
-            {showContainer ? 'See Less' : 'See All'}
+          className="text-white font-bold rounded-lg flex justify-center items-center px-24 py-2 bg-blue-500 hover:bg-blue-700">
+            {showContainer ? 'See Less' : 'See More'}
           </button>
         </h3>
       </div>
-      <div className="cate pt-12">
-        <div>
-          <img className="mx-10" src={categories} alt="" />
-        </div>
-        <div className="relative">
-          <img className="rectanglar" src={Rectanglar} alt="Logo" />
-          <div className="px-10 absolute image-container">
-            <img className="catego" src={tr} alt="Logo" />
-            <img className="catego" src={technology} alt="Logo" />
-            <img className="catego" src={su} alt="Logo" />
-            <img className="catego" src={re} alt="Logo" />
-            <img className="catego" src={ga} alt="Logo" />
-            <img className="catego" src={en} alt="Logo" />
-            <img className="catego" src={ed} alt="Logo" />
-            <img className="catego" src={di} alt="Logo" />
-            <img className="catego" src={ch} alt="Logo" />
-            <img className="catego" src={tr} alt="Logo" />
-            <img className="catego" src={ed} alt="Logo" />
-            <img className="catego" src={di} alt="Logo" />
 
-          </div>
-        </div>
-        {showCarouseltwo && (
-        <Carousel
-          ref={carouselRef}
-          responsive={responsive}
-          autoPlay
-          autoPlaySpeed={3000}
-          infinite
-          className="flex gap-4 justify px-10 mt-8"
-        >
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={ubuntu} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Linux} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={zeenox} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={image4} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-        </Carousel>
-        )};
-
-        {showContainertwo && (
-        <div className="px-10 seeall-container">
+      <div className='px-10 mb-6'>
+        <img src={ghana} alt="" />
+      </div>
+      {showMoretwo && (
+      <div className='contain px-10'>
       <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Apple} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -596,7 +351,7 @@ function Home() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Olive} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -610,7 +365,55 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Chilis} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>         
+          </div>
+      )}
+      {showContainertwo && (
+      <div className="px-10 seeall-container">
+      <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={Apple} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>          
+          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={Olive} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={Chilis} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -669,7 +472,7 @@ function Home() {
               </h3>
             </div>
           </div>          
-          <div className="pink w-96 pb-4">
+          {/*<div className="pink w-96 pb-4">
             <img className="pinkimg" src={Netflix} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
@@ -756,108 +559,24 @@ function Home() {
                 <img className="" src={heart_unfill} alt="Logo" />
               </h3>
             </div>
-          </div>
+      </div>*/}
           </div>
            )
           };
-        <h3 className="font-semibold px-10 text-2xl my-6">
-        <button
+      <div className="py-8 mx-10 flex justify-center items-center">
+        <h3 className="font-semibold text-2xl ">
+          <button
           onClick={toggleContainertwo}
-          className="text-white font-bold rounded-lg flex justify-center w-1/4 items-center px-2 py-2 bg-blue-500 hover:bg-blue-700">
-            {showContainertwo ? 'See Less' : 'See All'}
-          </button>        </h3>
-
+          className="text-white font-bold rounded-lg flex justify-center items-center px-24 py-2 bg-blue-500 hover:bg-blue-700">
+            {showContainertwo ? 'See Less' : 'See More'}
+          </button>
+        </h3>
       </div>
-      <div className="bg-orange-50">
-        <div className="pt-12">
-          <img className="px-10" src={BestDeals} alt="Logo" />
-          <img className="my-8 px-10" src={discov} alt="Logo" />
-          {showCarouselthree && (
-        <Carousel
-          ref={carouselRef}
-          responsive={responsive}
-          autoPlay
-          autoPlaySpeed={3000}
-          infinite
-          className="flex gap-4 justify px-10 mt-8"
-        >
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={ubuntu} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Linux} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={zeenox} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={image4} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
-            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
-            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
-              <img className="" src={heart_fill} alt="Logo" />
-              <small className="">1544 likes</small>
-            </h4>
-              <h3>
-                <img className="" src={heart_unfill} alt="Logo" />
-              </h3>
-            </div>
-          </div>
-        </Carousel>
-        )};
-
-        {showContainerthree && (
-        <div className="px-10 seeall-container">
+      <div className='px-10 mb-6'>
+        <img src={togo} alt="" />
+      </div>
+      {showMorethree && (
+      <div className='contain px-10'>
       <div className="pink w-96 pb-4">
             <img className="pinkimg" src={Netflix} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
@@ -874,7 +593,7 @@ function Home() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Uu} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -888,7 +607,55 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={Shirt} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>         
+          </div>
+      )}
+      {showContainerthree && (
+        <div className="px-10 seeall-container">
+        <div className="pink w-96 pb-4">
             <img className="pinkimg" src={Netflix} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>          
+          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={Uu} alt="Logo" />
+            <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
+            <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
+              <img className="" src={heart_fill} alt="Logo" />
+              <small className="">1544 likes</small>
+
+
+            </h4>
+              <h3>
+                <img className="" src={heart_unfill} alt="Logo" />
+              </h3>
+            </div>
+          </div>          <div className="pink w-96 pb-4">
+            <img className="pinkimg" src={Shirt} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -947,7 +714,7 @@ function Home() {
               </h3>
             </div>
           </div>          
-          <div className="pink w-96 pb-4">
+          {/*<div className="pink w-96 pb-4">
             <img className="pinkimg" src={Netflix} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
@@ -1034,32 +801,24 @@ function Home() {
                 <img className="" src={heart_unfill} alt="Logo" />
               </h3>
             </div>
-          </div>
+      </div>*/}
           </div>
            )
           };
-        <h3 className="font-semibold px-10 text-2xl my-6">
-        <button
+      <div className="py-8 mx-10 flex justify-center items-center">
+        <h3 className="font-semibold text-2xl ">
+          <button
           onClick={toggleContainerthree}
-          className="text-white font-bold rounded-lg flex justify-center w-1/4 items-center px-2 py-2 bg-blue-500 hover:bg-blue-700">
-            {showContainerthree ? 'See Less' : 'See All'}
-          </button>       
-           </h3>
-
-        </div>
+          className="text-white font-bold rounded-lg flex justify-center items-center px-24 py-2 bg-blue-500 hover:bg-blue-700">
+            {showContainerthree ? 'See Less' : 'See More'}
+          </button>
+        </h3>
       </div>
-      <div className="bg-blue-50">
-        <img className="" src={Framebig} alt="Logo" />
-      </div>
-      <Reviewcomp />
       <Supportcomp />
-     <Robluxcomp />
-      
-     <Footer />
+      <Robluxcomp />
+      <Footer />
     </nav>
-
-
-  );
+  )
 }
 
-export default Home;
+export default Mostpopular

@@ -69,6 +69,18 @@
   gap: 40px; /* Adjust the gap between images */
   top: 100px;
 }
+
+.seeall-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 40px; /* Adjust the gap between images */
+  top: 100px;
+
+}
+
+
 .span-container{
   display: flex;
   justify-content: center;
@@ -100,7 +112,7 @@
 
 }
 .caro{
-
+  overflow: hidden;
 }
 .round-div {
   width: 200px;
@@ -111,8 +123,8 @@
   align-items: center;
   animation: rotateAntiClockwise 8s linear infinite;
   position: absolute;
-  bottom: 0;
-  right: 0px;
+  bottom: -90px;
+  right: -40px;
 }
 .push{
   display: flex;
@@ -128,12 +140,32 @@ circular-text {
 }
 .ico{
   transition: filter 0.3s;
+  gap: 5px;
 }
-.ico:hover{
-  color:rgb(11, 78, 159);
+.ico:hover .circle{
+  color:#fff;
+  background-color: rgb(52, 130, 225);
+  border-color: rgb(52, 130, 225);
+  transform: scale(1.1);
+
 }
+.ico:hover h4{
+  color:rgb(52, 130, 225);
+  transform: scale(1.1);
+
+}
+
 .catego:hover{
 transform: scale(1.1);
+}
+.circle{
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -146,3 +178,16 @@ transform: scale(1.1);
   }
 }
 
+/* MOST POPULAR CARDS */
+/* MOST POPULAR CARDS */
+/* MOST POPULAR CARDS */
+/* MOST POPULAR CARDS */
+
+.contain {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 40px; /* Adjust the gap between images */
+  top: 100px;
+}
