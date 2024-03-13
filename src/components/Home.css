@@ -13,6 +13,7 @@
 .new{
     width: 500px;
 }
+
 .image-containerr {
   overflow: hidden;
   width: 50%;
@@ -111,9 +112,13 @@
   border-top-right-radius: 15px;
 
 }
+
+
+
+
 .caro{
   overflow: hidden;
-}
+  }
 .round-div {
   width: 200px;
   height: 200px;
@@ -177,6 +182,17 @@ transform: scale(1.1);
     transform: rotate(-360deg);
   }
 }
+.allrights{
+  height: 50px;
+  width: auto;
+  margin-top: 30px;
+  font-weight: 500;
+  color: #D0D5DD;
+  line-height: 24px;
+  font-size: 20px;
+
+
+}
 
 /* MOST POPULAR CARDS */
 /* MOST POPULAR CARDS */
@@ -191,3 +207,4 @@ transform: scale(1.1);
   gap: 40px; /* Adjust the gap between images */
   top: 100px;
 }
+
