@@ -126,8 +126,8 @@ color: #233694;
     left: 2rem;
     bottom: 1rem;
 }
-.component1, .component2{
-    animation: increaseDecrease 5s ease-in-out infinite;
+.animate{
+    animation: increaseDecrease 3s ease-in-out infinite;
 }
 @keyframes increaseDecrease {
     0% {

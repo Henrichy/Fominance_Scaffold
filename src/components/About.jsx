@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from './Nav'
 import Frameabout from "../assets/Frameabout.png"
-import Stat from "../assets/Stats1.png"
+import Supportcomp from "./Supportcomp";
 import "./About.css"
 import ourVision from "../assets/image 183.png"
 import ourMission from "../assets/image 184.png"
@@ -45,9 +45,9 @@ function About() {
         </div>
         <div className='Hero-div2'>
           <div className='div2'>
-            <img className='component1 ' src={Component1} />  
+            <img className='component1 animate' src={Component1} />  
             <img className='group-img ' src={Group} />
-            <img className='component2 ' src={Component3} />
+            <img className='component2  animate' src={Component3} />
             <img className='component3' src={vector} />
           </div>
             
@@ -73,6 +73,7 @@ function About() {
           <div className='omdiv'><h1 className='Om-header'>Our Mission</h1><br /><p className='om-paragraph'>Our mission is to simplify and elevate the art of gifting by providing a curated selection of digital gift cards for every occasion, delivering convenience, personalization, and delight to our users while fostering connections and spreading happiness.</p></div>
         </div>
       </div>
+      <Supportcomp/>
   
 
       
