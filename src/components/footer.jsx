@@ -61,9 +61,12 @@ function Footer() {
         <h5>Affiliate Programs</h5>
       </div>
     </div>
+    
+    <div className='allrights'>
+      <p> ©2024 Fominance.      All rights reserved.   <a href="">  Privacy Policy.</a> <a href="">Terms and Conditions</a></p>
+    </div>
 
-    <img className="mt-10" src={FrameCopy} alt="Logo" />
-
+    
   </div>
   )
 }

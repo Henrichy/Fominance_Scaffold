@@ -1,157 +1,161 @@
 .fimage{
-    width: 33.3%;
+  width: 33.3%;
 }
 .simage{
-    width: 33.3%;
+  width: 33.3%;
 }
 .timage{
-    width: 33.3%;
+  width: 33.3%;
 }
 .box{
-    height: 50vh;
+  height: 50vh;
 }
 .new{
-    width: 500px;
+  width: 500px;
 }
+
 .image-containerr {
-  overflow: hidden;
-  width: 50%;
+overflow: hidden;
+width: 50%;
 }
 .thewhite{
-  width: 50%;
+width: 50%;
 
 }
 .image {
-  transition: transform 0.3s ease;
-  width: 100%;
-  height: 100%;
+transition: transform 0.3s ease;
+width: 100%;
+height: 100%;
 }
 
 .image:hover {
-  transform: scale(1.1); /* Change the scale value to adjust the zoom level */
+transform: scale(1.1); /* Change the scale value to adjust the zoom level */
 }
 .firstslider{
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 .secslider{
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 .thirdslider{
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 .forthslider{
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 .cate{
-  background: #FAFEFF;
+background: #FAFEFF;
 }
 .relative {
-  position: relative;
+position: relative;
 }
 
 .rectanglar {
-  width: 100%; /* Adjust width as needed */
-  /* Add other styles for the rectangular image */
+width: 100%; /* Adjust width as needed */
+/* Add other styles for the rectangular image */
 }
 .reviews {
-  width: 100%; /* Adjust width as needed */
-  /* Add other styles for the rectangular image */
+width: 100%; /* Adjust width as needed */
+/* Add other styles for the rectangular image */
 }
 .image-container {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 40px; /* Adjust the gap between images */
-  top: 100px;
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+justify-content: flex-start;
+gap: 40px; /* Adjust the gap between images */
+top: 100px;
 }
 
 .seeall-container {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 40px; /* Adjust the gap between images */
-  top: 100px;
-
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+justify-content: flex-start;
+gap: 40px; /* Adjust the gap between images */
+transition: margin-top 3s ease; /* Transition for margin-top */
 }
 
 
 .span-container{
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  top: 50px;
+display: flex;
+justify-content: center;
+gap: 40px;
+top: 50px;
 }
 .span-container span{
-  width: 9.7vw;
-  height: 130px;
-  background-color: black;
-  opacity: 0;
-  cursor: pointer;
+width: 9.7vw;
+height: 130px;
+background-color: black;
+opacity: 0;
+cursor: pointer;
 }
 
 .image-container img {
-  
-  width: 20vw; /* Adjust the width of each image */
-  /* Subtracting the gap from width ensures there are 3 images per row */
-  /* Adjust the width as per your requirement */
-  /* Adjust other properties like height, object-fit, etc., according to your needs */
+
+width: 20vw; /* Adjust the width of each image */
+/* Subtracting the gap from width ensures there are 3 images per row */
+/* Adjust the width as per your requirement */
+/* Adjust other properties like height, object-fit, etc., according to your needs */
 }
 .pink{
-  background: #FFE6CF;
-  border-radius: 15px;
+background: #FFE6CF;
+border-radius: 15px;
 }
 .pinkimg{
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
 
 }
+
+
+
+
 .caro{
-  overflow: hidden;
+overflow: hidden;
 }
 .round-div {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: rotateAntiClockwise 8s linear infinite;
-  position: absolute;
-  bottom: -90px;
-  right: -40px;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+animation: rotateAntiClockwise 8s linear infinite;
+position: absolute;
+bottom: -90px;
+right: -40px;
 }
 .push{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 .content{
- color: white;
+color: white;
 }
 
 circular-text {
-  color: #fff;
+color: #fff;
 }
 .ico{
-  transition: filter 0.3s;
-  gap: 5px;
+transition: filter 0.3s;
+gap: 5px;
 }
 .ico:hover .circle{
-  color:#fff;
-  background-color: rgb(52, 130, 225);
-  border-color: rgb(52, 130, 225);
-  transform: scale(1.1);
+color:#fff;
+background-color: rgb(52, 130, 225);
+border-color: rgb(52, 130, 225);
+transform: scale(1.1);
 
 }
 .ico:hover h4{
-  color:rgb(52, 130, 225);
-  transform: scale(1.1);
+color:rgb(52, 130, 225);
+transform: scale(1.1);
 
 }
 
@@ -159,23 +163,34 @@ circular-text {
 transform: scale(1.1);
 }
 .circle{
-  border-radius: 50%;
-  border: 1px solid black;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+border-radius: 50%;
+border: 1px solid black;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
 @keyframes rotateAntiClockwise {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(-360deg);
+}
+}
+.allrights{
+height: 50px;
+width: auto;
+margin-top: 30px;
+font-weight: 500;
+color: #D0D5DD;
+line-height: 24px;
+font-size: 20px;
+
+
 }
 
 /* MOST POPULAR CARDS */
@@ -184,10 +199,14 @@ transform: scale(1.1);
 /* MOST POPULAR CARDS */
 
 .contain {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 40px; /* Adjust the gap between images */
-  top: 100px;
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+justify-content: flex-start;
+gap: 40px; /* Adjust the gap between images */
+top: 100px;
+}
+
+.overall{
+  overflow: hidden;
 }

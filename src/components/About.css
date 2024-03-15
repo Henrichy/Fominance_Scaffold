@@ -1,0 +1,142 @@
+.stat-img{
+    width: 100%;
+    
+}
+.txt-holder{
+    padding: 20px;
+    height: 458px;
+    padding: 177px;
+    width: auto;
+
+}
+.Paragraph-txt{
+    color: #8A8A8A;
+    line-height: 32.69px;
+    font-size: 24px;
+    font-weight: 400;
+    
+
+}
+.Big-txt{
+    font-size: 50px;
+    color: #233694;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 40px;
+
+
+}
+.grid-container{
+    margin-top: 5em;
+    padding-left: 177px;
+    align-items: center;
+    
+}
+.ourVisionimg{
+width: 612px;
+height: 323px;
+}
+.Ov-header, .Om-header{
+font-weight:500;
+font-size: 48px;
+line-height: 60px;
+color: #233694;
+}
+.ov-paragraph, .om-paragraph {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32.69px;
+    color: #8A8A8A;    
+}
+.ovdiv, .omdiv{
+    padding-right:200px;
+    height: 504px;
+    padding-top: 150px;
+}
+
+.txt-holder{
+    display: flex;
+    padding: 9rem;
+    flex-direction: column;
+}
+.welcome-header{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color:  #233694;
+}
+.welcome-p{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    color: #5B5656;
+    
+}
+.animatedTxt{
+    margin-top: 2rem;
+}
+.animated-txt{
+    color: #F16607;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 39.5px;
+}
+.welcome-p2{
+    color: #233694;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32.69px;
+    margin-top: 2rem;
+}
+.Hero-container{
+    height: 588px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9rem;
+    background-color: #fff5ec;
+    
+    
+}
+
+.component1{
+    height: 74.57px;
+    width: 70.42px;
+    margin-left: 14rem;
+}
+.component2{
+    height: 87px;
+    width: 75px;
+    margin-left: 28rem;
+    position: absolute;
+    top: 25rem;
+}
+.Hero-div2{
+    width:  600px ;
+    position: relative;
+    
+}
+
+.div2{
+    margin-left: 100px;
+    margin-bottom: 2rem;
+}
+.component3{
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+}
+.animate{
+    animation: increaseDecrease 3s ease-in-out infinite;
+}
+@keyframes increaseDecrease {
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }

@@ -32,6 +32,19 @@ import Netflix from "../assets/Netflix.png"
 import Linux from "../assets/8.png"
 import zeenox from "../assets/9.png"
 import image4 from "../assets/image4.png"
+import Peoplep from "../assets/peoplep.png"
+import Globalg from "../assets/globalg.png"
+import Giftcode from "../assets/giftcode.png"
+import Kiva from "../assets/kiva.png"
+import Kids from "../assets/kids.png"
+import Amnesty from "../assets/amnesty.png"
+import Moment from "../assets/moment.png"
+import Ox from "../assets/ox.png"
+import Others from "../assets/otherss.png"
+import Otherss from "../assets/othersss.png"
+import Gamepass from "../assets/gamepass.png"
+
+
 
 
 import "./Home.css"
@@ -45,30 +58,37 @@ import Supportcomp from "./Supportcomp";
 import Robluxcomp from "./Robluxcomp";
 
 
+
 function Home() {
-  const [showContainer, setShowContainer] = useState(false);
+  const initialMarginTop = '-1200px';
+
+  const [marginTop, setMarginTop] = useState(initialMarginTop);
   const [showCarousel, setShowCarousel] = useState(true);
-  const [showContainertwo, setShowContainertwo] = useState(false);
+
+  const [marginTopTwo, setMarginTopTwo] = useState(initialMarginTop);
   const [showCarouseltwo, setShowCarouseltwo] = useState(true);
-  const [showContainerthree, setShowContainerthree] = useState(false);
+
+  const [marginTopThree, setMarginTopThree] = useState(initialMarginTop);
   const [showCarouselthree, setShowCarouselthree] = useState(true);
 
 
   const toggleContainer = () => {
-    setShowContainer(!showContainer);
+    const newMarginTop = marginTop === initialMarginTop ? '0px' : initialMarginTop;
+    setMarginTop(newMarginTop);
     setShowCarousel(!showCarousel);
+  };
 
-  }
   const toggleContainertwo = () => {
-    setShowContainertwo(!showContainertwo);
+    const newMarginTopTwo = marginTopTwo === initialMarginTop ? '0px' : initialMarginTop;
+    setMarginTopTwo(newMarginTopTwo);
     setShowCarouseltwo(!showCarouseltwo);
+  };
 
-  }
   const toggleContainerthree = () => {
-    setShowContainerthree(!showContainerthree);
+    const newMarginTopThree = marginTopThree === initialMarginTop ? '0px' : initialMarginTop;
+    setMarginTopThree(newMarginTopThree);
     setShowCarouselthree(!showCarouselthree);
-
-  }
+  };
 
   const responsive = {
     superLargeDesktop: {
@@ -281,10 +301,11 @@ function Home() {
         )}
       </div>
       
-      {showContainer && (
-      <div className="px-10 seeall-container">
+      
+      <div className="overall">
+      <div className="px-10 seeall-container" style={{ marginTop: marginTop }}>
       <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Ox} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -313,7 +334,7 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Moment} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -328,7 +349,7 @@ function Home() {
             </div>
           </div>         
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Amnesty} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -343,7 +364,7 @@ function Home() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Kids} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -358,7 +379,7 @@ function Home() {
             </div>
           </div>    
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Kiva} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -373,7 +394,7 @@ function Home() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Giftcode} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -388,7 +409,7 @@ function Home() {
             </div>
           </div>            
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Globalg} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -402,7 +423,7 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Peoplep} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -417,7 +438,7 @@ function Home() {
             </div>
           </div>            
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Others} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -431,7 +452,7 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Otherss} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -446,7 +467,7 @@ function Home() {
             </div>
           </div>
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Gamepass} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -461,18 +482,17 @@ function Home() {
             </div>
           </div>
           </div>
-           )
-          };
+         </div>
       <div className="py-8 mx-10">
         <h3 className="font-semibold text-2xl">
           <button
           onClick={toggleContainer}
           className="text-white font-bold rounded-lg flex justify-center w-1/4 items-center px-2 py-2 bg-blue-500 hover:bg-blue-700">
-            {showContainer ? 'See Less' : 'See All'}
+           {showCarousel ? 'See All' : 'See Less'}
           </button>
         </h3>
       </div>
-      <div className="cate pt-12">
+      <div className="cate pt-12 pb-2">
         <div>
           <img className="mx-10" src={categories} alt="" />
         </div>
@@ -578,10 +598,11 @@ function Home() {
         </Carousel>
         )};
 
-        {showContainertwo && (
-        <div className="px-10 seeall-container">
+       
+<div className="overall">
+      <div className="px-10 seeall-container" style={{ marginTop: marginTopTwo }}>
       <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Ox} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -610,7 +631,7 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Moment} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -625,7 +646,7 @@ function Home() {
             </div>
           </div>         
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Amnesty} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -640,7 +661,7 @@ function Home() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Kids} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -655,7 +676,7 @@ function Home() {
             </div>
           </div>    
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Kiva} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -670,7 +691,7 @@ function Home() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Giftcode} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -685,7 +706,7 @@ function Home() {
             </div>
           </div>            
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Globalg} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -699,7 +720,7 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Peoplep} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -714,7 +735,7 @@ function Home() {
             </div>
           </div>            
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Others} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -728,7 +749,7 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Otherss} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -743,7 +764,7 @@ function Home() {
             </div>
           </div>
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Gamepass} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -758,17 +779,18 @@ function Home() {
             </div>
           </div>
           </div>
-           )
-          };
+         </div>
+      
         <h3 className="font-semibold px-10 text-2xl my-6">
         <button
           onClick={toggleContainertwo}
           className="text-white font-bold rounded-lg flex justify-center w-1/4 items-center px-2 py-2 bg-blue-500 hover:bg-blue-700">
-            {showContainertwo ? 'See Less' : 'See All'}
-          </button>        </h3>
+      {showCarouseltwo ? 'See All' : 'See Less'}
+                </button>        
+                </h3>
 
       </div>
-      <div className="bg-orange-50">
+      <div className="bg-orange-50 pb-4">
         <div className="pt-12">
           <img className="px-10" src={BestDeals} alt="Logo" />
           <img className="my-8 px-10" src={discov} alt="Logo" />
@@ -856,10 +878,11 @@ function Home() {
         </Carousel>
         )};
 
-        {showContainerthree && (
-        <div className="px-10 seeall-container">
+
+<div className="overall">
+      <div className="px-10 seeall-container" style={{ marginTop: marginTopThree }}>
       <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Ox} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -888,7 +911,7 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Moment} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -903,7 +926,7 @@ function Home() {
             </div>
           </div>         
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Amnesty} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -918,7 +941,7 @@ function Home() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Kids} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -933,7 +956,7 @@ function Home() {
             </div>
           </div>    
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Kiva} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -948,7 +971,7 @@ function Home() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Giftcode} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -963,7 +986,7 @@ function Home() {
             </div>
           </div>            
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Globalg} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -977,7 +1000,7 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Peoplep} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -992,7 +1015,7 @@ function Home() {
             </div>
           </div>            
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Others} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -1006,7 +1029,7 @@ function Home() {
               </h3>
             </div>
           </div>          <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Otherss} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -1021,7 +1044,7 @@ function Home() {
             </div>
           </div>
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Netflix} alt="Logo" />
+            <img className="pinkimg" src={Gamepass} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -1036,13 +1059,13 @@ function Home() {
             </div>
           </div>
           </div>
-           )
-          };
+         </div>
+      
         <h3 className="font-semibold px-10 text-2xl my-6">
         <button
           onClick={toggleContainerthree}
           className="text-white font-bold rounded-lg flex justify-center w-1/4 items-center px-2 py-2 bg-blue-500 hover:bg-blue-700">
-            {showContainerthree ? 'See Less' : 'See All'}
+            {showCarouselthree ? 'See All' : 'See Less'}
           </button>       
            </h3>
 

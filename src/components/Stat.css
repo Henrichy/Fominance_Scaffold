@@ -1,0 +1,70 @@
+.Stats{
+    background-color: #233694;
+    height: 194px;
+    display: flex;
+    gap: 15.5rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+.statheader{
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 50px;
+   color: #FEBF00;
+   
+}
+.statp{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38.14px;
+    color: white;
+
+}
+
+
+/* STYLING FOR  THE SUPPORT COMPONENT */
+
+
+.container, .image-containerr{
+    margin-top: 2rem;
+}
+.Supportdiv{
+    height: 558px;
+    justify-content: center;
+    
+}
+.image-containerr{
+    
+    height: 398px;
+    width: 641px;
+}
+.thewhite{
+    margin-top: 2rem;
+    height: 398px;
+    width: 671px;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+.Support-header{
+    color: #FA9218;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40.86px;
+}
+.S-paragraph{
+    margin-top: 1rem;
+    color: #896943;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.txt-container{
+    height: 284px;
+    padding: 2.5rem 4rem 0 4rem;
+}
+.image{
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    
+}
